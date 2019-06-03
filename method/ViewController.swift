@@ -16,7 +16,11 @@ class ViewController: UIViewController {
     
     
     @IBAction func calculate() {
+        if number1.text != "" && number2.text != ""{
+        
         score.text = String(equal())
+        
+        }
     }
     
     func equal() -> Int{
@@ -33,7 +37,10 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
-
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
+    }
 
 }
 
