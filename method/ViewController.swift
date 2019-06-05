@@ -17,10 +17,10 @@ class ViewController: UIViewController {
     
     @IBAction func calculate() {
         if number1.text != "" && number2.text != "" {
-            
-        
-        score.text = String(equal())
-        
+            if let onlyNumber = Int(number1.text!), let onlyNumber2 = Int(number2.text!) {
+                
+                      score.text = String(equal())
+            }
         }
     }
     
