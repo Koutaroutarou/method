@@ -16,7 +16,8 @@ class ViewController: UIViewController {
     
     
     @IBAction func calculate() {
-        if number1.text != "" && number2.text != ""{
+        if number1.text != "" && number2.text != "" {
+            
         
         score.text = String(equal())
         
